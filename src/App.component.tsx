@@ -154,7 +154,7 @@ const App: React.FC = () => {
     fetchAndSetRates();
     intervalToken = setInterval(() => {
       fetchAndSetRates();
-    }, 10000);
+    }, 60000);
 
     return () => {
       clearInterval(intervalToken);
